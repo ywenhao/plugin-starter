@@ -22,7 +22,7 @@
     "fast-glob": "^3.3.3"
   },
   "devDependencies": {
-    "@antfu/eslint-config": "^3.16.0",
+    "@antfu/eslint-config": "^4.11.0",
     "@types/node": "^22.13.11",
     "unbuild": "^3.5.0"
   }
