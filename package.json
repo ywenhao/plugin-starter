@@ -8,19 +8,14 @@
   "keywords": [
     "plugin-starter"
   ],
-  "sideEffects": false,
-  "exports": {
-    "./*": "./*"
-  },
   "files": [
-    "*.d.ts",
     "dist"
   ],
   "scripts": {
-    "build": "tsup src/**/*.ts --format cjs,esm --dts --splitting --clean",
-    "dev": "tsup src/**/*.ts --watch src",
+    "build": "unbuild",
+    "dev": "unbuild --watch",
     "lint": "eslint .",
-    "lint:fix": "nr lint --fix"
+    "lint:fix": "pnpm run lint --fix"
   },
   "dependencies": {
     "consola": "^3.4.2",
@@ -28,7 +23,6 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^3.16.0",
-    "@antfu/ni": "^0.23.2",
     "@types/node": "^22.13.11",
     "unbuild": "^3.5.0"
   }
