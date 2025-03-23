@@ -1,0 +1,19 @@
+{
+  "prettier.enable": false,
+  "eslint.enable": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "typescriptreact",
+    "vue",
+    "html",
+    "markdown"
+    // "json",
+    // "jsonc",
+    // "json5"
+  ]
+}

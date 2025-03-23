@@ -1,0 +1,35 @@
+{
+  "name": "plugin-starter",
+  "type": "module",
+  "version": "0.0.0",
+  "description": "plugin-starter",
+  "author": "ywenhao",
+  "license": "MIT",
+  "keywords": [
+    "plugin-starter"
+  ],
+  "sideEffects": false,
+  "exports": {
+    "./*": "./*"
+  },
+  "files": [
+    "*.d.ts",
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/**/*.ts --format cjs,esm --dts --splitting --clean",
+    "dev": "tsup src/**/*.ts --watch src",
+    "lint": "eslint .",
+    "lint:fix": "nr lint --fix"
+  },
+  "dependencies": {
+    "consola": "^3.4.2",
+    "fast-glob": "^3.3.3"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^3.16.0",
+    "@antfu/ni": "^0.23.2",
+    "@types/node": "^22.13.11",
+    "unbuild": "^3.5.0"
+  }
+}
